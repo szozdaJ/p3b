@@ -1,0 +1,7 @@
+add two system calls; clone and join
+clone creates a new thread which shares the address space (shares the variables and process local stuff
+join waits for the cloned address to exit
+create a thread library to call this routine, malloc, returns PID to parent and 0 to child (-1 if fail)
+thread join should use the child thread
+
+lock implemented should be a simple spin lock, not a ticket
